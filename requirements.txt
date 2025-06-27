@@ -1,4 +1,3 @@
-# Core Data Science Libraries
 pandas==2.3.0
 numpy==1.26.4
 matplotlib==3.10.3
@@ -11,21 +10,10 @@ imbalanced-learn==0.13.0
 wordcloud==1.9.4
 plotly==6.1.2
 tqdm==4.67.1
-
-# Spark & Utilities (remove if not needed)
 pyspark==3.5.1
 findspark==2.0.1
-
-# Streamlit and Widgets
 streamlit==1.45.1
 jupyterlab==4.4.3
 ipywidgets==8.1.7
-
-# SciPy (pin to a version with prebuilt wheels for Python 3.10/3.11)
-scipy==1.10.1
-
-# If you use LightFM for recommendations, use a prebuilt release, not a Git install
-lightfm==1.17
-
-# If you want sentence-transformers for better NLP (optional)
-# sentence-transformers==2.6.1
+scipy==1.9.3 
+lightfm==1.17  
