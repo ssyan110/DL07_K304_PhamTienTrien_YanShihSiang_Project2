@@ -11,6 +11,6 @@ tqdm==4.66.2
 vaderSentiment==3.3.2
 gensim==4.3.2
 annoy==1.17.3
-lightfm==1.17
+# lightfm==1.17  # Temporarily comment out or test lightfm==1.16
 scipy==1.10.1
 setuptools<70.0.0
