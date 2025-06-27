@@ -156,7 +156,7 @@ if page.startswith("🔍"):
 elif page == "📊 Project Results":
     import os
 
-    OUTPUTS_PATH = "outputs"
+    OUTPUTS_PATH = os.path.join(os.path.dirname(__file__), "outputs")
 
     CUSTOM_CAPTIONS = {
         "roc_curve.png": "ROC Curve: All Models (Sklearn & PySpark)",
