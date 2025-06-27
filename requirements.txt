@@ -1,0 +1,32 @@
+# Core libraries
+pandas==2.3.0
+numpy==1.26.4
+matplotlib==3.10.3
+seaborn==0.13.2
+scikit-learn==1.6.1
+gensim==4.3.3
+underthesea==6.8.4
+nltk==3.9.1
+langdetect==1.0.9
+imbalanced-learn==0.13.0
+wordcloud==1.9.4
+plotly==6.1.2
+tqdm==4.67.1
+
+# For PySpark-based modeling
+pyspark==3.5.1
+findspark==2.0.1
+
+# Web App
+streamlit==1.45.1
+
+# Jupyter
+jupyterlab==4.4.3
+ipywidgets==8.1.7
+
+# Additional libraries found in the code
+scipy==1.13.1
+deep-translator==1.11.4
+vaderSentiment==3.3.2
+annoy==1.17.3
+lightfm @ git+https://github.com/lyst/lightfm.git@0c9c31e027b976beab2385e268b58010fff46096 
