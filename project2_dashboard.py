@@ -242,7 +242,7 @@ elif page == "📊 Project Results":
             file_path = os.path.join(OUTPUTS_PATH, img_file)
             caption = get_caption(img_file)
             insight = get_insight(img_file)
-            st.image(file_path, caption=caption, use_container_width=True)
+            st.image(file_path, caption=caption)
             if insight:
                 st.markdown(
                     f"<div style='margin-bottom:40px; font-size: 1.08rem; color:#4ec9b0;'>"
