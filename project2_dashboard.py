@@ -230,15 +230,15 @@ elif page == "📊 Project Results":
             "**LightFM** is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
             "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
         ),
-        "recommended_result_by__keyword_1.png": (
+        "recommended_result_by_keyword_1.png": (
             "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),
-        "recommended_result_by__keyword_2.png": (
+        "recommended_result_by_keyword_2.png": (
             "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),
-        "recommended_result_by__keyword_3.png": (
+        "recommended_result_by_keyword_3.png": (
             "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),    
