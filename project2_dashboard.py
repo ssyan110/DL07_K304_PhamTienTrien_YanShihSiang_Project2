@@ -59,7 +59,24 @@ page = st.sidebar.radio(
     ("🔍 Search & Evaluate", "📊 Project Results")
 )
 
-if page.startswith("🔍"):
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("""
+**Yêu cầu 1:** Dựa trên những thông tin từ các công ty đăng trên ITViec để gợi ý các công ty tương tự dựa trên nội dung mô tả.).
+
+**Yêu cầu 2:** Dựa trên những thông tin từ review của ứng viên/ nhân viên đăng trên ITViec để dự đoán khả năng “Recommend” công ty..
+""")
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("📌 **Group information:**")
+st.sidebar.write("1. Yan Shih Siang")  
+st.sidebar.write("• Email: ssyan110@gmail.com")  
+st.sidebar.write("2. Phạm Tiến Triển ")  
+st.sidebar.write("• Email: Phamtrien0211@gmail.com")
+
+
+
+if page.startswith("🔍Search & Evaluate"):
 
     st.title("👩‍💻 ITViec Company Analyzer – Search & Evaluate")
 
