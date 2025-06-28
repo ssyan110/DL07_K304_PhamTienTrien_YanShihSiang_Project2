@@ -219,27 +219,27 @@ elif page == "📊 Project Results":
             "Logistic Regression (PySpark) is decent but has the lowest AUC."
         ),
         "recommended_result_by_ID_1.png": (
-        "**LightFM** is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
-        "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
+            "LightFM is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
+            "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
         ),
         "recommended_result_by_ID_2.png": (
-            "**LightFM** is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
+            "LightFM is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
             "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
         ),
         "recommended_result_by_ID_3.png": (
-            "**LightFM** is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
+            "LightFM is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).  \n"
             "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
         ),
         "recommended_result_by_keyword_1.png": (
-            "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
+            "Doc2Vec excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),
         "recommended_result_by_keyword_2.png": (
-            "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
+            "Doc2Vec excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),
         "recommended_result_by_keyword_3.png": (
-            "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
+            "Doc2Vec excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).  \n"
             "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
         ),    
     }
