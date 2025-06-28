@@ -76,7 +76,7 @@ st.sidebar.write("• Email: Phamtrien0211@gmail.com")
 
 
 
-if page.startswith("🔍Search & Evaluate"):
+if page.startswith("🔍 Search & Evaluate"):
 
     st.title("👩‍💻 ITViec Company Analyzer – Search & Evaluate")
 
