@@ -245,27 +245,29 @@ elif page == "📊 Project Results":
     st.title("📊 Project Results & Visualizations")
 
     files = [f for f in os.listdir(OUTPUTS_PATH) if f.endswith(".png")]
-    if not files:
-        st.warning("No output images found in outputs folder.")
-        st.stop()
-
-    plot_types = sorted(set(get_plot_type(f) for f in files))
-    selected_type = st.selectbox("Select plot type", plot_types)
-    filtered_files = [f for f in files if get_plot_type(f) == selected_type]
     if not filtered_files:
         st.info("No images found for this plot type.")
     else:
-        for img_file in filtered_files:
+        for i, img_file in enumerate(filtered_files):
             file_path = os.path.join(OUTPUTS_PATH, img_file)
             caption = get_caption(img_file)
-            insight = get_insight(img_file)
             st.image(file_path, caption=caption)
-            if insight:
-                st.markdown(
-                    f"<div style='margin-bottom:40px; font-size: 1.08rem; color:#4ec9b0;'>"
-                    f"<b>Insight:</b> {insight}"
-                    f"</div>",
-                    unsafe_allow_html=True
-                )
-            else:
-                st.markdown("<br>", unsafe_allow_html=True)
+        # Show one insight at the end for the group if matched
+        if filtered_files and filtered_files[0].startswith("recommended_result_by_ID"):
+            st.markdown(
+                "<div style='margin-bottom:40px; font-size: 1.08rem; color:#4ec9b0;'>"
+                "<b>Insight:</b> "
+                "**LightFM** is the most powerful when users want to find *similar companies* based on a specific company (e.g., “show me companies like FPT Software”).<br>"
+                "LightFM combines both company profiles and user-review patterns, providing the most diverse and accurate alternatives."
+                "</div>",
+                unsafe_allow_html=True
+            )
+        elif filtered_files and filtered_files[0].startswith("recommended_result_by__keyword"):
+            st.markdown(
+                "<div style='margin-bottom:40px; font-size: 1.08rem; color:#4ec9b0;'>"
+                "<b>Insight:</b> "
+                "**Doc2Vec** excels at *semantic keyword search* (e.g., “high salary”, “good work-life balance”).<br>"
+                "It surfaces companies whose descriptions and reviews best match the meaning of your search terms."
+                "</div>",
+                unsafe_allow_html=True
+            )
